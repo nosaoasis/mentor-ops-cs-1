@@ -16,20 +16,6 @@ function App() {
       setNewTask('');
     }
   };
-
-  // const addTask = () => {
-  //   if (newTask.trim() !== '') {
-  //     // Check if the task already exists
-  //     const taskExists = tasks.some((task) => task.text === newTask.trim());
-  
-  //     if (!taskExists) {
-  //       setTasks([...tasks, { id: Date.now(), text: newTask.trim() }]);
-  //       setNewTask('');
-  //     } else {
-  //       alert('Task already exists!');
-  //     }
-  //   }
-  // };
   
 
   const deleteTask = (taskId) => {
