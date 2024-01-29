@@ -1,5 +1,5 @@
 /**
- * Update the code such that same task is not repeated twice. For example, the task "Jug 10miles" should not appear in the task list
+ * Update the code such that same task is not repeated twice. For example, the task "Jug 10miles" should not appear twice in the task list
  */
 
 import React, { useState } from 'react';
@@ -16,6 +16,21 @@ function App() {
       setNewTask('');
     }
   };
+
+  // const addTask = () => {
+  //   if (newTask.trim() !== '') {
+  //     // Check if the task already exists
+  //     const taskExists = tasks.some((task) => task.text === newTask.trim());
+  
+  //     if (!taskExists) {
+  //       setTasks([...tasks, { id: Date.now(), text: newTask.trim() }]);
+  //       setNewTask('');
+  //     } else {
+  //       alert('Task already exists!');
+  //     }
+  //   }
+  // };
+  
 
   const deleteTask = (taskId) => {
     const updatedTasks = tasks.filter((task) => task.id !== taskId);
